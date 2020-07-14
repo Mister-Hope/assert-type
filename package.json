@@ -51,8 +51,10 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "hooks": {
-    "pre-commit": "yarn run tsc && lint-staged"
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run tsc && lint-staged"
+    }
   },
   "lint-staged": {
     "*.{ts}": [
