@@ -65,5 +65,8 @@
     "package.json": [
       "sort-package-json"
     ]
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
