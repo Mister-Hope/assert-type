@@ -1,4 +1,15 @@
-/* eslint-disable @typescript-eslint/restrict-template-expressions */
+const toString = (variable: unknown): string =>
+  Array.isArray(variable)
+    ? `[${variable.toString()}]`
+    : typeof variable === "object" && variable !== null
+    ? JSON.stringify(variable)
+    : typeof variable === "symbol"
+    ? variable.description || ""
+    : variable === null
+    ? "null"
+    : typeof variable === "undefined"
+    ? "undefined"
+    : (variable as string | number | boolean).toString();
 
 const simpleAssetType = (variable: unknown, type: string): boolean => {
   if (type === "array") return Array.isArray(variable);
@@ -44,9 +55,9 @@ const simpleAssetType = (variable: unknown, type: string): boolean => {
           ] !== contentType
         ) {
           console.error(
-            `应为 ${type}，但值 ${
+            `应为 ${type}，但值 ${toString(
               (variable as Record<string | number | symbol, unknown>)[key]
-            } 为 ${typeof (variable as Record<
+            )} 为 ${typeof (variable as Record<
               string | number | symbol,
               unknown
             >)[key]}`
@@ -76,13 +87,7 @@ const assertTypes = (
     if (simpleAssetType(variable, type)) return true;
 
     console.error(
-      `${variableName} 应为 ${type}，但此处为 ${
-        Array.isArray(variable)
-          ? `[${variable.toString()}]`
-          : typeof variable === "object" && variable !== null
-          ? JSON.stringify(variable)
-          : variable
-      }`
+      `${variableName} 应为 ${type}，但此处为 ${toString(variable)}`
     );
 
     return false;
@@ -93,19 +98,13 @@ const assertTypes = (
       return true;
 
     console.error(
-      `${variableName} 应为 ${type.toString()}，但此处为 ${
-        Array.isArray(variable)
-          ? `[${variable.toString()}]`
-          : typeof variable === "object" && variable !== null
-          ? variable.toString()
-          : variable
-      }`
+      `${variableName} 应为 ${type.toString()}，但此处为 ${toString(variable)}`
     );
 
     return false;
   }
 
-  console.error(`未知类型配置 ${type}`);
+  console.error(`未知类型配置 ${toString(type)}`);
 
   return false;
 };
@@ -131,7 +130,7 @@ export const assertType = (
       console.error(
         `${variableName} 应为 ${type.enum.join(
           "、"
-        )} 中之一，但此处为 ${variable}`
+        )} 中之一，但此处为 ${toString(variable)}`
       );
 
       return false;
@@ -143,7 +142,7 @@ export const assertType = (
     return assertTypes(variable, type.type, variableName);
   }
 
-  console.error(`未知类型配置 ${type}`);
+  console.error(`未知类型配置 ${toString(type)}`);
 
   return false;
 };
@@ -195,7 +194,7 @@ export const checkKeys = (
     return false;
   }
 
-  console.error(`${objName} 应为 object，但其值为 ${obj}`);
+  console.error(`${objName} 应为 object，但其类型为 ${typeof obj}`);
 
   return false;
 };
