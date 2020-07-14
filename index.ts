@@ -183,8 +183,10 @@ export const checkKeys = (
       return typeof type === "string"
         ? type !== "undefined"
         : Array.isArray(type)
-        ? type.some((typeItem) => typeItem === "undefined")
-        : true;
+        ? !type.some((typeItem) => typeItem === "undefined")
+        : typeof type.type === "string"
+        ? type.type !== "undefined"
+        : !type.type.some((typeItem) => typeItem === "undefined");
     });
 
     if (unfindKeys.length === 0) return true;
