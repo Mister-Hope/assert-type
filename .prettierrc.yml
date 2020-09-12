@@ -20,7 +20,7 @@ quoteProps: as-needed
 jsxSingleQuote: false
 
 # 是否使用尾逗号，< none | es5(default) | all >
-trailingComma: none
+trailingComma: es5
 
 # 对象大括号是否有空格，默认为 true，效果：{ foo: bar }
 bracketSpacing: true

@@ -1,6 +1,6 @@
 import { describe, it } from "mocha";
 import { expect } from "chai";
-import { assertType, checkKeys } from "../index";
+import { assertType, checkKeys } from "../src/";
 
 const a = 1;
 const b = true;

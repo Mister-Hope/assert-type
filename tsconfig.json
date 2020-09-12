@@ -6,6 +6,7 @@
     "allowUnusedLabels": false,
     "alwaysStrict": false,
     "declaration": true,
+    "declarationDir": "./typings",
     "diagnostics": false,
     "downlevelIteration": false,
     "experimentalDecorators": true,
@@ -32,7 +33,8 @@
     "target": "es6",
     "lib": ["es6", "es2017", "es2018", "es2019"],
     "locale": "zh-CN",
+    "outDir": "./lib",
     "module": "CommonJS"
   },
-  "include": ["index.ts"]
+  "include": ["src/*.ts"]
 }
