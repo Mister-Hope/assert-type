@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.1.0](http://mister-hope/assert-type/compare/v1.0.0...v1.1.0) (2021-01-09)
+
+### Features
+
+- use rollup ([9cca679](http://mister-hope/assert-type/commits/9cca679ca39d8cf1b891a76d7fefb10fde97401d))
+
 ## [1.0.0](http://mister-hope/assert-type/compare/v0.0.2...v1.0.0) (2020-09-12)
 
 ### Features
