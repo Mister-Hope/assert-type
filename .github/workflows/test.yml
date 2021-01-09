@@ -26,8 +26,8 @@ jobs:
         if: steps.node_modules-cache.outputs.cache-hit != 'true'
         run: yarn install --frozen-lockfile
 
-      - name: Typescript compile
-        run: yarn run tsc
+      - name: Build project
+        run: yarn run build
 
       - name: Run full test
         run: |

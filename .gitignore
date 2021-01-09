@@ -1,4 +1,8 @@
+# Node modules
 node_modules/
 
-lib/*.js
-typings/*.d.ts
+# Dist
+dist/
+
+# Types
+typings/

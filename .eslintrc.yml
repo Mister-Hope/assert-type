@@ -4,6 +4,11 @@ env:
   node: true
   es6: true
 
+ignorePatterns:
+  - dist/
+  - node_modules/
+  - typings/
+
 extends:
   - eslint:recommended
   - prettier
@@ -69,6 +74,12 @@ rules:
 
 overrides:
   - files:
+      - rollup.config.js
+
+    parserOptions:
+      sourceType: module
+
+  - files:
       - "*.ts"
 
     extends:
@@ -84,7 +95,7 @@ overrides:
       parser: "@typescript-eslint/parser"
       project:
         - "./tsconfig.json"
-        - "./test-tsconfig.json"
+        - "./tsconfig.test.json"
 
     rules:
       "@typescript-eslint/explicit-function-return-type":
@@ -118,25 +129,13 @@ overrides:
         - warn
 
   - files:
-      - "**/test/**/*.spec.js"
-      - "**/test/**/*.spec.ts"
-      - "**/test/**/*.test.js"
-      - "**/test/**/*.test.ts"
+      - "**/__tests__/**/*.spec.{j,t}s?(x)"
 
     env:
-      mocha: true
+      jest: true
 
     rules:
-      id-length: "off"
-      max-lines-per-function: "off"
-
-  - files:
-      - "**/test/**/*.spec.ts"
-      - "**/test/**/*.test.ts"
-
-    rules:
-      "@typescript-eslint/no-explicit-any":
-        - off
-
-      "@typescript-eslint/no-unsafe-member-access":
-        - off
+      id-length: off
+      max-lines-per-function: off
+      "@typescript-eslint/no-explicit-any": off
+      "@typescript-eslint/no-unsafe-member-access": off
