@@ -1,6 +1,6 @@
 import { toString } from "./to-string";
 
-export const assertType = (variable: unknown, type: string): boolean => {
+export const assertType = <T = unknown>(variable: T, type: string): boolean => {
   if (type === "array") return Array.isArray(variable);
   if (type === "null") return variable === null;
   if (["number", "string", "boolean", "undefined"].includes(type))

@@ -1,20 +1,26 @@
 # @mr-hope/assert-type
 
+<!-- markdownlint-disable MD033 -->
+
+[![作者: Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.site)
+[![License](https://img.shields.io/github/license/mister-hope/assert-type?style=for-the-badge)](https://github.com/Mister-Hope/assert-type/tree/master/LICENSE)
+
 一个简单的类型判断库。
 
 ## assertType
 
 ```ts
-interface TypeOption {
+interface TypeOption<T = unknown> {
     type: string | string[];
-    enum?: unknown[];
-    additional?: unknown[];
+    enum?: T[];
+    additional?: T[];
 }
 
-assertType(variable: unknown, type: string[] | string | TypeOption, variableName?: string) => boolean;
+assertType<T = unknown>(variable: T, type: string[] | string | TypeOption, variableName?: string) => boolean;
 ```
 
-案例:
+<details>
+<summary>案例</summary>
 
 ```js
 const a = 1;
@@ -69,13 +75,16 @@ assertType(k, "Record<string,string>"); // true
 assertType(k, "Record<string, string>"); // true
 ```
 
+</details>
+
 ## checkKeys
 
 ```ts
-checkKeys(obj: unknown, config: Record<string, string[] | string | TypeOption>, objName?: string) => boolean;
+checkKeys<T = unknown>(obj: T, config: Record<string, string[] | string | TypeOption>, objName?: string) => boolean;
 ```
 
-案例:
+<details>
+<summary>案例</summary>
 
 ```js
 checkKeys({ title: "a", desc: "b" }, { title: "string", desc: "string" }); // true
@@ -96,3 +105,5 @@ checkKeys(
   { title: "string", desc: "string", content: "array" }
 ); // false
 ```
+
+</details>

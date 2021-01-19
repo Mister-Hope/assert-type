@@ -1,19 +1,19 @@
 import { toString } from "./to-string";
 import { assertTypes } from "./assert-types";
 
-export interface TypeOption {
+export interface TypeOption<T = unknown> {
   type: string | string[];
-  enum?: unknown[];
-  additional?: unknown[];
+  enum?: T[];
+  additional?: T[];
 }
 
-export const assertType = (
-  variable: unknown,
-  type: string[] | string | TypeOption,
+export const assertType = <T = unknown>(
+  variable: T,
+  type: string[] | string | TypeOption<T>,
   variableName = ""
 ): boolean => {
   if (typeof type === "string" || Array.isArray(type))
-    return assertTypes(variable, type, variableName);
+    return assertTypes<T>(variable, type, variableName);
 
   if (typeof type === "object") {
     if (type.enum) {
@@ -31,7 +31,7 @@ export const assertType = (
     if (type.additional && type.additional.some((value) => variable === value))
       return true;
 
-    return assertTypes(variable, type.type, variableName);
+    return assertTypes<T>(variable, type.type, variableName);
   }
 
   console.error(`未知类型配置 ${toString(type)}`);
@@ -39,8 +39,8 @@ export const assertType = (
   return false;
 };
 
-export const checkKeys = (
-  obj: unknown,
+export const checkKeys = <T = unknown>(
+  obj: T,
   config: Record<string, string[] | string | TypeOption>,
   objName = ""
 ): boolean => {

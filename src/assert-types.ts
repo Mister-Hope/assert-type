@@ -1,8 +1,8 @@
 import { assertType } from "./assert-type";
 import { toString } from "./to-string";
 
-export const assertTypes = (
-  variable: unknown,
+export const assertTypes = <T = unknown>(
+  variable: T,
   type: string[] | string,
   variableName = ""
 ): boolean => {
