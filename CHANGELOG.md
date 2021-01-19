@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.0](http://mister-hope/assert-type/compare/v1.1.0...v1.2.0) (2021-01-19)
+
+### Features
+
+- add generics ([2b9446f](http://mister-hope/assert-type/commits/2b9446ff0e52e63197ab7cb2f78e38e2a815fd56))
+
 ## [1.1.0](http://mister-hope/assert-type/compare/v1.0.0...v1.1.0) (2021-01-09)
 
 ### Features
