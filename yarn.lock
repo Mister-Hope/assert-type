@@ -674,10 +674,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@26.0.20":
-  version "26.0.20"
-  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.20.tgz#cd2f2702ecf69e86b586e1f5223a60e454056307"
-  integrity sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
+"@types/jest@26.0.22":
+  version "26.0.22"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.22.tgz#8308a1debdf1b807aa47be2838acdcd91e88fbe6"
+  integrity sha512-eeWwWjlqxvBxc4oQdkueW5OF/gtfSceKk4OnOAGlUSwS/liBRtZppbJuz1YkgbrbfGOoeBHun9fOvXnjNwrSOw==
   dependencies:
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
@@ -4778,10 +4778,10 @@ rollup-plugin-dts@3.0.1:
   optionalDependencies:
     "@babel/code-frame" "^7.12.13"
 
-rollup@2.41.2:
-  version "2.41.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.41.2.tgz#b7db5cb7c21c2d524e8b26ef39c7e9808a290c7e"
-  integrity sha512-6u8fJJXJx6fmvKrAC9DHYZgONvSkz8S9b/VFBjoQ6dkKdHyPpPbpqiNl2Bao9XBzDHpq672X6sGZ9G1ZBqAHMg==
+rollup@2.44.0:
+  version "2.44.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.44.0.tgz#8da324d1c4fd12beef9ae6e12f4068265b6d95eb"
+  integrity sha512-rGSF4pLwvuaH/x4nAS+zP6UNn5YUDWf/TeEU5IoXSZKBbKRNTCI3qMnYXKZgrC0D2KzS2baiOZt1OlqhMu5rnQ==
   optionalDependencies:
     fsevents "~2.3.1"
 
