@@ -46,10 +46,9 @@ export const assertType = <T = unknown>(variable: T, type: string): boolean => {
           console.error(
             `应为 ${type}，但值 ${toString(
               (variable as Record<string | number | symbol, unknown>)[key]
-            )} 为 ${typeof (variable as Record<
-              string | number | symbol,
-              unknown
-            >)[key]}`
+            )} 为 ${typeof (
+              variable as Record<string | number | symbol, unknown>
+            )[key]}`
           );
 
           return false;
