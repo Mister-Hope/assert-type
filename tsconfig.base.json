@@ -17,7 +17,7 @@
     "inlineSourceMap": false,
     "inlineSources": false,
     "lib": ["ESNext"],
-    "listEmittedFiles": true,
+    "listEmittedFiles": false,
     "module": "CommonJS",
     "moduleResolution": "node",
     "newLine": "lf",

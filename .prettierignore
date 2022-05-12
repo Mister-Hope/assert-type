@@ -1,8 +1,8 @@
 # Node modules
 node_modules/
 
+# Coverage
+coverage/
+
 # Dist
 dist/
-
-# Types
-typings/

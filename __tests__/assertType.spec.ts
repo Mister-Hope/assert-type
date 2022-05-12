@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { assertType, checkKeys } from "../src";
 
 const a = 1;
