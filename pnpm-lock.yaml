@@ -16,7 +16,7 @@ specifiers:
   lint-staged: 13.0.0
   prettier: 2.6.2
   rimraf: 3.0.2
-  rollup: 2.75.3
+  rollup: 2.75.5
   rollup-plugin-dts: 4.2.2
   rollup-plugin-terser: 7.0.2
   sort-package-json: 1.57.0
@@ -27,8 +27,8 @@ specifiers:
   vitest: 0.13.0
 
 devDependencies:
-  '@rollup/plugin-json': 4.1.0_rollup@2.75.3
-  '@rollup/plugin-typescript': 8.3.2_anqczobaqaqyrwi4x4ftwchoyi
+  '@rollup/plugin-json': 4.1.0_rollup@2.75.5
+  '@rollup/plugin-typescript': 8.3.2_i2cmtaxdolycdms224vq2iy2ey
   '@types/node': 17.0.36
   '@typescript-eslint/eslint-plugin': 5.27.0_dszb5tb7atwkjjijmmov4qhi7i
   '@typescript-eslint/parser': 5.27.0_xztl6dhthcahlo6akmb2bmjmle
@@ -42,9 +42,9 @@ devDependencies:
   lint-staged: 13.0.0
   prettier: 2.6.2
   rimraf: 3.0.2
-  rollup: 2.75.3
-  rollup-plugin-dts: 4.2.2_nl2qxg2fxlgm6l264qcwjguuca
-  rollup-plugin-terser: 7.0.2_rollup@2.75.3
+  rollup: 2.75.5
+  rollup-plugin-dts: 4.2.2_c35tdt7gp2d5l5haihtfkb3u7e
+  rollup-plugin-terser: 7.0.2_rollup@2.75.5
   sort-package-json: 1.57.0
   ts-node: 10.8.0_w6gfxie3xfwntbz3mwbbvycbdq
   tslib: 2.4.0
@@ -230,16 +230,16 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rollup/plugin-json/4.1.0_rollup@2.75.3:
+  /@rollup/plugin-json/4.1.0_rollup@2.75.5:
     resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==}
     peerDependencies:
       rollup: ^1.20.0 || ^2.0.0
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.75.3
-      rollup: 2.75.3
+      '@rollup/pluginutils': 3.1.0_rollup@2.75.5
+      rollup: 2.75.5
     dev: true
 
-  /@rollup/plugin-typescript/8.3.2_anqczobaqaqyrwi4x4ftwchoyi:
+  /@rollup/plugin-typescript/8.3.2_i2cmtaxdolycdms224vq2iy2ey:
     resolution: {integrity: sha512-MtgyR5LNHZr3GyN0tM7gNO9D0CS+Y+vflS4v/PHmrX17JCkHUYKvQ5jN5o3cz1YKllM3duXUqu3yOHwMPUxhDg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
@@ -247,14 +247,14 @@ packages:
       tslib: '*'
       typescript: '>=3.7.0'
     dependencies:
-      '@rollup/pluginutils': 3.1.0_rollup@2.75.3
+      '@rollup/pluginutils': 3.1.0_rollup@2.75.5
       resolve: 1.22.0
-      rollup: 2.75.3
+      rollup: 2.75.5
       tslib: 2.4.0
       typescript: 4.7.2
     dev: true
 
-  /@rollup/pluginutils/3.1.0_rollup@2.75.3:
+  /@rollup/pluginutils/3.1.0_rollup@2.75.5:
     resolution: {integrity: sha512-GksZ6pr6TpIjHm8h9lSQ8pi8BE9VeubNT0OMJ3B5uZJ8pz73NPiqOtCog/x2/QzM1ENChPKxMDhiQuRHsqc+lg==}
     engines: {node: '>= 8.0.0'}
     peerDependencies:
@@ -263,7 +263,7 @@ packages:
       '@types/estree': 0.0.39
       estree-walker: 1.0.1
       picomatch: 2.3.1
-      rollup: 2.75.3
+      rollup: 2.75.5
     dev: true
 
   /@tsconfig/node10/1.0.8:
@@ -2895,7 +2895,7 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup-plugin-dts/4.2.2_nl2qxg2fxlgm6l264qcwjguuca:
+  /rollup-plugin-dts/4.2.2_c35tdt7gp2d5l5haihtfkb3u7e:
     resolution: {integrity: sha512-A3g6Rogyko/PXeKoUlkjxkP++8UDVpgA7C+Tdl77Xj4fgEaIjPSnxRmR53EzvoYy97VMVwLAOcWJudaVAuxneQ==}
     engines: {node: '>=v12.22.11'}
     peerDependencies:
@@ -2903,26 +2903,26 @@ packages:
       typescript: ^4.1
     dependencies:
       magic-string: 0.26.2
-      rollup: 2.75.3
+      rollup: 2.75.5
       typescript: 4.7.2
     optionalDependencies:
       '@babel/code-frame': 7.16.7
     dev: true
 
-  /rollup-plugin-terser/7.0.2_rollup@2.75.3:
+  /rollup-plugin-terser/7.0.2_rollup@2.75.5:
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     peerDependencies:
       rollup: ^2.0.0
     dependencies:
       '@babel/code-frame': 7.16.7
       jest-worker: 26.6.2
-      rollup: 2.75.3
+      rollup: 2.75.5
       serialize-javascript: 4.0.0
       terser: 5.13.1
     dev: true
 
-  /rollup/2.75.3:
-    resolution: {integrity: sha512-YA29fLU6MAYSaDxIQYrGGOcbXlDmG96h0krGGYObroezcQ0KgEPM3+7MtKD/qeuUbFuAJXvKZee5dA1dpwq1PQ==}
+  /rollup/2.75.5:
+    resolution: {integrity: sha512-JzNlJZDison3o2mOxVmb44Oz7t74EfSd1SQrplQk0wSaXV7uLQXtVdHbxlcT3w+8tZ1TL4r/eLfc7nAbz38BBA==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3494,7 +3494,7 @@ packages:
       esbuild: 0.14.41
       postcss: 8.4.14
       resolve: 1.22.0
-      rollup: 2.75.3
+      rollup: 2.75.5
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
