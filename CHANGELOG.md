@@ -16,7 +16,7 @@
 
 ### Features
 
-- rebuild with typescriptV4 ([2d7add2](http://mister-hope/assert-type/commits/2d7add2b5f97c2ae582379686da7d6fd602ad08d))
+- rebuild with typescript@v4 ([2d7add2](http://mister-hope/assert-type/commits/2d7add2b5f97c2ae582379686da7d6fd602ad08d))
 
 ## 0.0.2 (2020-07-14)
 

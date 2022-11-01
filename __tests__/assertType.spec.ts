@@ -59,7 +59,7 @@ describe("assert test", () => {
     expect(assertType(k, "Record<string, string>")).toEqual(true);
   });
 
-  it("should assert muti type", () => {
+  it("should assert multi type", () => {
     expect(assertType(a, ["boolean", "null"])).toEqual(false);
     expect(assertType(b, ["boolean", "object"])).toEqual(true);
     expect(assertType(b, ["string", "array"])).toEqual(false);
