@@ -6,3 +6,6 @@ coverage/
 
 # Dist
 dist/
+
+# pnpm lock file
+pnpm-lock.yaml
