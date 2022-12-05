@@ -17,7 +17,7 @@ specifiers:
   lint-staged: 13.0.4
   prettier: 2.7.1
   rimraf: 3.0.2
-  rollup: 3.4.0
+  rollup: 3.6.0
   rollup-plugin-dts: 5.0.0
   rollup-plugin-terser: 7.0.2
   sort-package-json: 2.1.0
@@ -28,8 +28,8 @@ specifiers:
   vitest: 0.25.0
 
 devDependencies:
-  '@rollup/plugin-json': 5.0.1_rollup@3.4.0
-  '@rollup/plugin-typescript': 9.0.2_s6m3rpedm3k4x6fdgsy4tpufni
+  '@rollup/plugin-json': 5.0.1_rollup@3.6.0
+  '@rollup/plugin-typescript': 9.0.2_5irny636yvbp4nmfcffr2jgdku
   '@types/node': 18.11.9
   '@typescript-eslint/eslint-plugin': 5.42.0_mxixellv4jxn4nrxsff2atoe7u
   '@typescript-eslint/parser': 5.42.0_zksrc6ykdxhogxjbhb5axiabwi
@@ -44,9 +44,9 @@ devDependencies:
   lint-staged: 13.0.4
   prettier: 2.7.1
   rimraf: 3.0.2
-  rollup: 3.4.0
-  rollup-plugin-dts: 5.0.0_gxoaovnvpo6lnrm23rwbc2cac4
-  rollup-plugin-terser: 7.0.2_rollup@3.4.0
+  rollup: 3.6.0
+  rollup-plugin-dts: 5.0.0_pwnjjsmhcjjaj4eyn3pn3rtipm
+  rollup-plugin-terser: 7.0.2_rollup@3.6.0
   sort-package-json: 2.1.0
   ts-node: 10.9.1_cbe7ovvae6zqfnmtgctpgpys54
   tslib: 2.4.1
@@ -277,7 +277,7 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rollup/plugin-json/5.0.1_rollup@3.4.0:
+  /@rollup/plugin-json/5.0.1_rollup@3.6.0:
     resolution: {integrity: sha512-QCwhZZLvM8nRcTHyR1vOgyTMiAnjiNj1ebD/BMRvbO1oc/z14lZH6PfxXeegee2B6mky/u9fia4fxRM4TqrUaw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -286,11 +286,11 @@ packages:
       rollup:
         optional: true
     dependencies:
-      '@rollup/pluginutils': 5.0.2_rollup@3.4.0
-      rollup: 3.4.0
+      '@rollup/pluginutils': 5.0.2_rollup@3.6.0
+      rollup: 3.6.0
     dev: true
 
-  /@rollup/plugin-typescript/9.0.2_s6m3rpedm3k4x6fdgsy4tpufni:
+  /@rollup/plugin-typescript/9.0.2_5irny636yvbp4nmfcffr2jgdku:
     resolution: {integrity: sha512-/sS93vmHUMjzDUsl5scNQr1mUlNE1QjBBvOhmRwJCH8k2RRhDIm3c977B3wdu3t3Ap17W6dDeXP3hj1P1Un1bA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -303,14 +303,14 @@ packages:
       tslib:
         optional: true
     dependencies:
-      '@rollup/pluginutils': 5.0.2_rollup@3.4.0
+      '@rollup/pluginutils': 5.0.2_rollup@3.6.0
       resolve: 1.22.1
-      rollup: 3.4.0
+      rollup: 3.6.0
       tslib: 2.4.1
       typescript: 4.8.4
     dev: true
 
-  /@rollup/pluginutils/5.0.2_rollup@3.4.0:
+  /@rollup/pluginutils/5.0.2_rollup@3.6.0:
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -322,7 +322,7 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 3.4.0
+      rollup: 3.6.0
     dev: true
 
   /@tsconfig/node10/1.0.9:
@@ -3012,7 +3012,7 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup-plugin-dts/5.0.0_gxoaovnvpo6lnrm23rwbc2cac4:
+  /rollup-plugin-dts/5.0.0_pwnjjsmhcjjaj4eyn3pn3rtipm:
     resolution: {integrity: sha512-OO8ayCvuJCKaQSShyVTARxGurVVk4ulzbuvz+0zFd1f93vlnWFU5pBMT7HFeS6uj7MvvZLx4kUAarGATSU1+Ng==}
     engines: {node: '>=v14'}
     peerDependencies:
@@ -3020,20 +3020,20 @@ packages:
       typescript: ^4.1
     dependencies:
       magic-string: 0.26.7
-      rollup: 3.4.0
+      rollup: 3.6.0
       typescript: 4.8.4
     optionalDependencies:
       '@babel/code-frame': 7.18.6
     dev: true
 
-  /rollup-plugin-terser/7.0.2_rollup@3.4.0:
+  /rollup-plugin-terser/7.0.2_rollup@3.6.0:
     resolution: {integrity: sha512-w3iIaU4OxcF52UUXiZNsNeuXIMDvFrr+ZXK6bFZ0Q60qyVfq4uLptoS4bbq3paG3x216eQllFZX7zt6TIImguQ==}
     peerDependencies:
       rollup: ^2.0.0
     dependencies:
       '@babel/code-frame': 7.18.6
       jest-worker: 26.6.2
-      rollup: 3.4.0
+      rollup: 3.6.0
       serialize-javascript: 4.0.0
       terser: 5.15.1
     dev: true
@@ -3046,8 +3046,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /rollup/3.4.0:
-    resolution: {integrity: sha512-4g8ZrEFK7UbDvy3JF+d5bLiC8UKkS3n/27/cnVeESwB1LVPl6MoPL32/6+SCQ1vHTp6Mvp2veIHtwELhi+uXEw==}
+  /rollup/3.6.0:
+    resolution: {integrity: sha512-qCgiBeSu2/AIOKWGFMiRkjPlGlcVwxAjwpGKQZOQYng+83Hip4PjrWHm7EQX1wnrvRqfTytEihRRfLHdX+hR4g==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
