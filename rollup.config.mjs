@@ -1,18 +1,31 @@
 import json from "@rollup/plugin-json";
-import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
-import { terser } from "rollup-plugin-terser";
+import esbuild from "rollup-plugin-esbuild";
 
 export default [
   {
     input: "./src/index.ts",
     output: [{ file: "./dist/index.cjs", format: "cjs", sourcemap: true }],
-    plugins: [json(), typescript(), terser()],
+    plugins: [
+      json(),
+      esbuild({
+        charset: "utf8",
+        minify: true,
+        target: "node14",
+      }),
+    ],
   },
   {
     input: "./src/index.ts",
     output: [{ file: "./dist/index.mjs", format: "esm", sourcemap: true }],
-    plugins: [json(), typescript(), terser()],
+    plugins: [
+      json(),
+      esbuild({
+        charset: "utf8",
+        minify: true,
+        target: "node14",
+      }),
+    ],
   },
   {
     input: "./src/index.ts",
