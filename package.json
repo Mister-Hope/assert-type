@@ -61,7 +61,7 @@
     }
   },
   "devDependencies": {
-    "@rollup/plugin-json": "5.0.1",
+    "@rollup/plugin-json": "5.0.2",
     "@rollup/plugin-typescript": "9.0.2",
     "@types/node": "18.11.9",
     "@typescript-eslint/eslint-plugin": "5.46.0",
