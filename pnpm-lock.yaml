@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@rollup/plugin-json': 5.0.2
+  '@rollup/plugin-json': 6.0.0
   '@types/node': 18.11.12
   '@typescript-eslint/eslint-plugin': 5.46.0
   '@typescript-eslint/parser': 5.46.0
@@ -28,7 +28,7 @@ specifiers:
   vitest: 0.25.7
 
 devDependencies:
-  '@rollup/plugin-json': 5.0.2_rollup@3.7.2
+  '@rollup/plugin-json': 6.0.0_rollup@3.7.2
   '@types/node': 18.11.12
   '@typescript-eslint/eslint-plugin': 5.46.0_5mle7isnkfgjmrghnnczirv6iy
   '@typescript-eslint/parser': 5.46.0_ha6vam6werchizxrnqvarmz2zu
@@ -436,8 +436,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rollup/plugin-json/5.0.2_rollup@3.7.2:
-    resolution: {integrity: sha512-D1CoOT2wPvadWLhVcmpkDnesTzjhNIQRWLsc3fA49IFOP2Y84cFOOJ+nKGYedvXHKUsPeq07HR4hXpBBr+CHlA==}
+  /@rollup/plugin-json/6.0.0_rollup@3.7.2:
+    resolution: {integrity: sha512-i/4C5Jrdr1XUarRhVu27EEwjt4GObltD7c+MkCIpO2QIbojw8MUs+CCTqOphQi3Qtg1FLmYt+l+6YeoIf51J7w==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0
