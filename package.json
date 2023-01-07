@@ -71,7 +71,7 @@
     "cz-conventional-changelog": "3.3.0",
     "esbuild": "0.16.9",
     "eslint": "8.31.0",
-    "eslint-config-prettier": "8.5.0",
+    "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
     "husky": "8.0.2",
     "lint-staged": "13.1.0",
