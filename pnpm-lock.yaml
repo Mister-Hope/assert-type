@@ -59,8 +59,8 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0(esbuild@0.17.0)(rollup@3.10.0)
   sort-package-json:
-    specifier: 2.1.0
-    version: 2.1.0
+    specifier: 2.4.1
+    version: 2.4.1
   ts-node:
     specifier: 10.9.1
     version: 10.9.1(@types/node@18.11.18)(typescript@4.9.4)
@@ -3399,8 +3399,8 @@ packages:
     resolution: {integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==}
     dev: true
 
-  /sort-package-json@2.1.0:
-    resolution: {integrity: sha512-M5ctkdnn7znAkoVQJ0Y+PHDUieyXMhydPyW7r2J9ZM0Iwc3BTyEf5cmoSRfHNo07FEvzWwnphcP7GlrAX164UQ==}
+  /sort-package-json@2.4.1:
+    resolution: {integrity: sha512-Nd3rgLBJcZ4iw7tpuOhwBupG6SvUDU0Fy1cZGAMorA2JmDUb+29Dg5phJK9gapa2Ak9d15w/RuMl/viwX+nKwQ==}
     hasBin: true
     dependencies:
       detect-indent: 7.0.1
