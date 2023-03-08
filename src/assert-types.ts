@@ -1,5 +1,5 @@
-import { assertType } from "./assert-type";
-import { toString } from "./to-string";
+import { assertType } from "./assert-type.js";
+import { toString } from "./to-string.js";
 
 export const assertTypes = <T = unknown>(
   variable: T,

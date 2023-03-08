@@ -1,4 +1,4 @@
-import { toString } from "./to-string";
+import { toString } from "./to-string.js";
 
 export const assertType = <T = unknown>(variable: T, type: string): boolean => {
   if (type === "array") return Array.isArray(variable);

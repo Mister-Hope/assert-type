@@ -1,5 +1,5 @@
-import { toString } from "./to-string";
-import { assertTypes } from "./assert-types";
+import { toString } from "./to-string.js";
+import { assertTypes } from "./assert-types.js";
 
 export interface TypeOption<T = unknown> {
   type: string | string[];
