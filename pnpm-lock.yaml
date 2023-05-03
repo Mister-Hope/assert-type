@@ -3,7 +3,7 @@ lockfileVersion: '6.0'
 devDependencies:
   '@rollup/plugin-json':
     specifier: 6.0.0
-    version: 6.0.0(rollup@3.18.0)
+    version: 6.0.0(rollup@3.21.4)
   '@types/node':
     specifier: 18.14.6
     version: 18.14.6
@@ -50,14 +50,14 @@ devDependencies:
     specifier: 5.0.0
     version: 5.0.0
   rollup:
-    specifier: 3.18.0
-    version: 3.18.0
+    specifier: 3.21.4
+    version: 3.21.4
   rollup-plugin-dts:
     specifier: 5.3.0
-    version: 5.3.0(rollup@3.18.0)(typescript@5.0.4)
+    version: 5.3.0(rollup@3.21.4)(typescript@5.0.4)
   rollup-plugin-esbuild:
     specifier: 5.0.0
-    version: 5.0.0(esbuild@0.17.15)(rollup@3.18.0)
+    version: 5.0.0(esbuild@0.17.15)(rollup@3.21.4)
   sort-package-json:
     specifier: 2.4.1
     version: 2.4.1
@@ -488,7 +488,7 @@ packages:
     dev: true
     optional: true
 
-  /@rollup/plugin-json@6.0.0(rollup@3.18.0):
+  /@rollup/plugin-json@6.0.0(rollup@3.21.4):
     resolution: {integrity: sha512-i/4C5Jrdr1XUarRhVu27EEwjt4GObltD7c+MkCIpO2QIbojw8MUs+CCTqOphQi3Qtg1FLmYt+l+6YeoIf51J7w==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -497,11 +497,11 @@ packages:
       rollup:
         optional: true
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.18.0)
-      rollup: 3.18.0
+      '@rollup/pluginutils': 5.0.2(rollup@3.21.4)
+      rollup: 3.21.4
     dev: true
 
-  /@rollup/pluginutils@5.0.2(rollup@3.18.0):
+  /@rollup/pluginutils@5.0.2(rollup@3.21.4):
     resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
@@ -513,7 +513,7 @@ packages:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
-      rollup: 3.18.0
+      rollup: 3.21.4
     dev: true
 
   /@tsconfig/node10@1.0.9:
@@ -2980,7 +2980,7 @@ packages:
       glob: 10.2.1
     dev: true
 
-  /rollup-plugin-dts@5.3.0(rollup@3.18.0)(typescript@5.0.4):
+  /rollup-plugin-dts@5.3.0(rollup@3.21.4)(typescript@5.0.4):
     resolution: {integrity: sha512-8FXp0ZkyZj1iU5klkIJYLjIq/YZSwBoERu33QBDxm/1yw5UU4txrEtcmMkrq+ZiKu3Q4qvPCNqc3ovX6rjqzbQ==}
     engines: {node: '>=v14'}
     peerDependencies:
@@ -2988,40 +2988,32 @@ packages:
       typescript: ^4.1 || ^5.0
     dependencies:
       magic-string: 0.30.0
-      rollup: 3.18.0
+      rollup: 3.21.4
       typescript: 5.0.4
     optionalDependencies:
       '@babel/code-frame': 7.18.6
     dev: true
 
-  /rollup-plugin-esbuild@5.0.0(esbuild@0.17.15)(rollup@3.18.0):
+  /rollup-plugin-esbuild@5.0.0(esbuild@0.17.15)(rollup@3.21.4):
     resolution: {integrity: sha512-1cRIOHAPh8WQgdQQyyvFdeOdxuiyk+zB5zJ5+YOwrZP4cJ0MT3Fs48pQxrZeyZHcn+klFherytILVfE4aYrneg==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     peerDependencies:
       esbuild: '>=0.10.1'
       rollup: ^1.20.0 || ^2.0.0 || ^3.0.0
     dependencies:
-      '@rollup/pluginutils': 5.0.2(rollup@3.18.0)
+      '@rollup/pluginutils': 5.0.2(rollup@3.21.4)
       debug: 4.3.4
       es-module-lexer: 1.2.0
       esbuild: 0.17.15
       joycon: 3.1.1
       jsonc-parser: 3.2.0
-      rollup: 3.18.0
+      rollup: 3.21.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /rollup@3.18.0:
-    resolution: {integrity: sha512-J8C6VfEBjkvYPESMQYxKHxNOh4A5a3FlP+0BETGo34HEcE4eTlgCrO2+eWzlu2a/sHs2QUkZco+wscH7jhhgWg==}
-    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
-    hasBin: true
-    optionalDependencies:
-      fsevents: 2.3.2
-    dev: true
-
-  /rollup@3.21.0:
-    resolution: {integrity: sha512-ANPhVcyeHvYdQMUyCbczy33nbLzI7RzrBje4uvNiTDJGIMtlKoOStmympwr9OtS1LZxiDmE2wvxHyVhoLtf1KQ==}
+  /rollup@3.21.4:
+    resolution: {integrity: sha512-N5LxpvDolOm9ueiCp4NfB80omMDqb45ShtsQw2+OT3f11uJ197dv703NZvznYHP6RWR85wfxanXurXKG3ux2GQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3591,7 +3583,7 @@ packages:
       '@types/node': 18.14.6
       esbuild: 0.17.15
       postcss: 8.4.21
-      rollup: 3.21.0
+      rollup: 3.21.4
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
