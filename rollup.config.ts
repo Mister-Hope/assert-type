@@ -11,7 +11,7 @@ export default [
       esbuild({
         charset: "utf8",
         minify: true,
-        target: "node14",
+        target: "node16",
       }),
     ],
   },
@@ -23,7 +23,7 @@ export default [
       esbuild({
         charset: "utf8",
         minify: true,
-        target: "node14",
+        target: "node16",
       }),
     ],
   },

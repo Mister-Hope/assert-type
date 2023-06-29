@@ -2,7 +2,7 @@
 
 <!-- markdownlint-disable MD033 -->
 
-[![作者: Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mrhope.site)
+[![作者: Mr.Hope](https://img.shields.io/badge/作者-Mr.Hope-blue.svg?style=for-the-badge)](https://mister-hope.com)
 [![License](https://img.shields.io/github/license/mister-hope/assert-type?style=for-the-badge)](https://github.com/Mister-Hope/assert-type/tree/master/LICENSE)
 
 一个简单的类型判断库。
