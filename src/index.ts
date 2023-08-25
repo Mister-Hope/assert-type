@@ -10,7 +10,7 @@ export interface TypeOption<T = unknown> {
 export const assertType = <T = unknown>(
   variable: T,
   type: string[] | string | TypeOption<T>,
-  variableName = ""
+  variableName = "",
 ): boolean => {
   if (typeof type === "string" || Array.isArray(type))
     return assertTypes<T>(variable, type, variableName);
@@ -21,8 +21,8 @@ export const assertType = <T = unknown>(
 
       console.error(
         `${variableName} 应为 ${type.enum.join(
-          "、"
-        )} 中之一，但此处为 ${toString(variable)}`
+          "、",
+        )} 中之一，但此处为 ${toString(variable)}`,
       );
 
       return false;
@@ -42,7 +42,7 @@ export const assertType = <T = unknown>(
 export const checkKeys = <T = unknown>(
   obj: T,
   config: Record<string, string[] | string | TypeOption>,
-  objName = ""
+  objName = "",
 ): boolean => {
   if (typeof obj === "object" && obj !== null) {
     const configKeys = Object.keys(config);
@@ -53,7 +53,7 @@ export const checkKeys = <T = unknown>(
           assertType(
             (obj as Record<string | number | symbol, unknown>)[key],
             config[key],
-            `${objName ? `${objName}.` : ""}${key}`
+            `${objName ? `${objName}.` : ""}${key}`,
           )
         ) {
           configKeys.splice(configKeys.indexOf(key), 1);

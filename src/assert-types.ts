@@ -4,13 +4,13 @@ import { toString } from "./to-string.js";
 export const assertTypes = <T = unknown>(
   variable: T,
   type: string[] | string,
-  variableName = ""
+  variableName = "",
 ): boolean => {
   if (typeof type === "string") {
     if (assertType(variable, type)) return true;
 
     console.error(
-      `${variableName} 应为 ${type}，但此处为 ${toString(variable)}`
+      `${variableName} 应为 ${type}，但此处为 ${toString(variable)}`,
     );
 
     return false;
@@ -20,7 +20,7 @@ export const assertTypes = <T = unknown>(
     if (type.some((typeItem) => assertType(variable, typeItem))) return true;
 
     console.error(
-      `${variableName} 应为 ${type.toString()}，但此处为 ${toString(variable)}`
+      `${variableName} 应为 ${type.toString()}，但此处为 ${toString(variable)}`,
     );
 
     return false;

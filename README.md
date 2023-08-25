@@ -91,7 +91,7 @@ checkKeys({ title: "a", desc: "b" }, { title: "string", desc: "string" }); // tr
 
 checkKeys(
   { title: "a", desc: "b" },
-  { title: ["boolean", "string"], desc: ["string", "number"] }
+  { title: ["boolean", "string"], desc: ["string", "number"] },
 ); // true
 
 checkKeys({ title: "a", desc: "b", a: 1 }, { title: "string", desc: "string" }); // false
@@ -102,7 +102,7 @@ checkKeys({ title: "a", desc: 3 }, { title: "string", desc: "string" }); // fals
 
 checkKeys(
   { title: "a", desc: "b" },
-  { title: "string", desc: "string", content: "array" }
+  { title: "string", desc: "string", content: "array" },
 ); // false
 ```
 

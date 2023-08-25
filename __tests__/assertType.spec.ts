@@ -64,50 +64,50 @@ describe("assert test", () => {
     expect(assertType(b, ["boolean", "object"])).toEqual(true);
     expect(assertType(b, ["string", "array"])).toEqual(false);
     expect(
-      assertType(b, { type: ["string", "array"], additional: [true] })
+      assertType(b, { type: ["string", "array"], additional: [true] }),
     ).toEqual(true);
     expect(assertType(h, ["number", "string[]"])).toEqual(true);
     expect(assertType(h, ["number[]", "string[]"])).toEqual(true);
     expect(assertType(i, ["number[]", "string[]"])).toEqual(false);
     expect(
-      assertType(j, ["Record<string, boolean>", "Record<string, string>"])
+      assertType(j, ["Record<string, boolean>", "Record<string, string>"]),
     ).toEqual(false);
     expect(
-      assertType(j, ["Record<string, number>", "Record<string, string>"])
+      assertType(j, ["Record<string, number>", "Record<string, string>"]),
     ).toEqual(true);
     expect(
-      assertType(k, ["Record<string, number>", "Record<string, string>"])
+      assertType(k, ["Record<string, number>", "Record<string, string>"]),
     ).toEqual(true);
     expect(assertType(k, "Record<string, string>")).toEqual(true);
   });
 
   it("should check keys", () => {
     expect(
-      checkKeys({ title: "a", desc: "b" }, { title: "string", desc: "string" })
+      checkKeys({ title: "a", desc: "b" }, { title: "string", desc: "string" }),
     ).toEqual(true);
     expect(
       checkKeys(
         { title: "a", desc: "b" },
-        { title: ["boolean", "string"], desc: ["string", "number"] }
-      )
+        { title: ["boolean", "string"], desc: ["string", "number"] },
+      ),
     ).toEqual(true);
     expect(
       checkKeys(
         { title: "a", desc: "b", a: 1 },
-        { title: "string", desc: "string" }
-      )
+        { title: "string", desc: "string" },
+      ),
     ).toEqual(false);
     expect(
-      checkKeys({ title: "a" }, { title: "string", desc: "string" })
+      checkKeys({ title: "a" }, { title: "string", desc: "string" }),
     ).toEqual(false);
     expect(
-      checkKeys({ title: "a", desc: 3 }, { title: "string", desc: "string" })
+      checkKeys({ title: "a", desc: 3 }, { title: "string", desc: "string" }),
     ).toEqual(false);
     expect(
       checkKeys(
         { title: "a", desc: "b" },
-        { title: "string", desc: "string", content: "array" }
-      )
+        { title: "string", desc: "string", content: "array" },
+      ),
     ).toEqual(false);
   });
 });
