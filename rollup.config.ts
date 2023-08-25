@@ -34,6 +34,12 @@ export default [
       { file: "./dist/index.d.cts", format: "esm", sourcemap: true },
       { file: "./dist/index.d.mts", format: "esm", sourcemap: true },
     ],
-    plugins: [dts()],
+    plugins: [
+      dts({
+        compilerOptions: {
+          moduleResolution: 99,
+        },
+      }),
+    ],
   },
 ];
