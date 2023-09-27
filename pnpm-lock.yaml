@@ -48,8 +48,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   rimraf:
-    specifier: 5.0.1
-    version: 5.0.1
+    specifier: 5.0.5
+    version: 5.0.5
   rollup:
     specifier: 3.29.1
     version: 3.29.1
@@ -2139,13 +2139,13 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.3.3:
-    resolution: {integrity: sha512-92vPiMb/iqpmEgsOoIDvTjc50wf9CCCvMzsi6W0JLPeUKE8TWP1a73PgqSrqy7iAZxaSD1YdzU7QZR5LF51MJw==}
+  /glob@10.3.10:
+    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
       foreground-child: 3.1.1
-      jackspeak: 2.3.0
+      jackspeak: 2.3.5
       minimatch: 9.0.3
       minipass: 7.0.3
       path-scurry: 1.10.1
@@ -2506,8 +2506,8 @@ packages:
       istanbul-lib-report: 3.0.1
     dev: true
 
-  /jackspeak@2.3.0:
-    resolution: {integrity: sha512-uKmsITSsF4rUWQHzqaRUuyAir3fZfW3f202Ee34lz/gZCi970CPZwyQXLGNgWJvvZbvFyzeyGq0+4fcG/mBKZg==}
+  /jackspeak@2.3.5:
+    resolution: {integrity: sha512-Ratx+B8WeXLAtRJn26hrhY8S1+Jz6pxPMrkrdkgb/NstTNiqMhX0/oFVu5wX+g5n6JlEu2LPsDJmY8nRP4+alw==}
     engines: {node: '>=14'}
     dependencies:
       '@isaacs/cliui': 8.0.2
@@ -3144,12 +3144,12 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf@5.0.1:
-    resolution: {integrity: sha512-OfFZdwtd3lZ+XZzYP/6gTACubwFcHdLRqS9UX3UwpU2dnGQYkPFISRwvM3w9IiB2w7bW5qGo/uAwE4SmXXSKvg==}
+  /rimraf@5.0.5:
+    resolution: {integrity: sha512-CqDakW+hMe/Bz202FPEymy68P+G50RfMQK+Qo5YUqc9SPipvbGjCGKd0RSKEelbsfQuw3g5NZDSrlZZAJurH1A==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 10.3.3
+      glob: 10.3.10
     dev: true
 
   /rollup-plugin-dts@6.0.2(rollup@3.29.1)(typescript@5.2.2):
