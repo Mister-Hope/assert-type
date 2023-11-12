@@ -1,4 +1,3 @@
-import json from "@rollup/plugin-json";
 import dts from "rollup-plugin-dts";
 import esbuild from "rollup-plugin-esbuild";
 
@@ -7,11 +6,10 @@ export default [
     input: "./src/index.ts",
     output: [{ file: "./dist/index.cjs", format: "cjs", sourcemap: true }],
     plugins: [
-      json(),
       esbuild({
         charset: "utf8",
         minify: true,
-        target: "node16",
+        target: "node18",
       }),
     ],
   },
@@ -19,11 +17,10 @@ export default [
     input: "./src/index.ts",
     output: [{ file: "./dist/index.mjs", format: "esm", sourcemap: true }],
     plugins: [
-      json(),
       esbuild({
         charset: "utf8",
         minify: true,
-        target: "node16",
+        target: "node18",
       }),
     ],
   },
