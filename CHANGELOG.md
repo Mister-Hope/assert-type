@@ -1,8 +1,6 @@
-# [3.0.0](Mister-Hope/assert-type/compare/v1.2.5...v3.0.0) (2023-11-12)
-
-
-
 # Changelog
+
+# [3.0.0](Mister-Hope/assert-type/compare/v1.2.5...v3.0.0) (2023-11-12)
 
 ## [1.2.0](http://mister-hope/assert-type/compare/v1.1.0...v1.2.0) (2021-01-19)
 
