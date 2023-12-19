@@ -63,7 +63,7 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "packageManager": "pnpm@8.11.0",
+  "packageManager": "pnpm@8.12.1",
   "devDependencies": {
     "@types/node": "20.10.3",
     "@typescript-eslint/eslint-plugin": "6.13.2",
