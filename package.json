@@ -58,7 +58,7 @@
     "@typescript-eslint/eslint-plugin": "7.7.1",
     "@typescript-eslint/parser": "7.7.1",
     "@vitest/coverage-v8": "1.6.0",
-    "conventional-changelog-cli": "4.1.0",
+    "conventional-changelog-cli": "5.0.0",
     "cz-conventional-changelog": "3.3.0",
     "esbuild": "0.20.2",
     "eslint": "8.57.0",
