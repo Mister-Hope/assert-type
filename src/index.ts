@@ -1,5 +1,5 @@
-import { toString } from "./to-string.js";
 import { assertTypes } from "./assert-types.js";
+import { toString } from "./to-string.js";
 
 export interface TypeOption<T = unknown> {
   type: string | string[];
@@ -28,8 +28,7 @@ export const assertType = <T = unknown>(
       return false;
     }
 
-    if (type.additional && type.additional.some((value) => variable === value))
-      return true;
+    if (type.additional?.some((value) => variable === value)) return true;
 
     return assertTypes<T>(variable, type.type, variableName);
   }

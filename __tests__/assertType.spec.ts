@@ -1,11 +1,12 @@
 import { describe, expect, it } from "vitest";
-import { assertType, checkKeys } from "../src";
+
+import { assertType, checkKeys } from "../src/index.js";
 
 const a = 1;
 const b = true;
 const c = "abc";
 const d = undefined;
-const e: any[] = [];
+const e: unknown[] = [];
 const f: Record<never, never> = {};
 const g = [1, 2, 3];
 const h = ["a", "b", "c"];

@@ -35,6 +35,7 @@ export const assertType = <T = unknown>(variable: T, type: string): boolean => {
       for (const key in variable) {
         if (typeof key !== keyType) {
           console.error(`应为 ${type}，但键 ${key} 为 ${typeof key}`);
+
           return false;
         }
 
