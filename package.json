@@ -55,7 +55,7 @@
     }
   },
   "devDependencies": {
-    "@types/node": "20.14.9",
+    "@types/node": "20.14.10",
     "@vitest/coverage-v8": "1.6.0",
     "conventional-changelog-cli": "5.0.0",
     "cz-conventional-changelog": "3.3.0",
