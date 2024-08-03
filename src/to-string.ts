@@ -4,7 +4,7 @@ export const toString = (variable: unknown): string =>
     : typeof variable === "object" && variable !== null
       ? JSON.stringify(variable)
       : typeof variable === "symbol"
-        ? variable.description ?? ""
+        ? (variable.description ?? "")
         : variable === null
           ? "null"
           : typeof variable === "undefined"
