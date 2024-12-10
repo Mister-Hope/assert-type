@@ -1,6 +1,7 @@
 import { assertType } from "./assert-type.js";
 import { toString } from "./to-string.js";
 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
 export const assertTypes = <T = unknown>(
   variable: T,
   type: string[] | string,

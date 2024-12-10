@@ -27,8 +27,8 @@ importers:
         specifier: 9.16.0
         version: 9.16.0(jiti@1.21.6)
       eslint-config-mister-hope:
-        specifier: 0.3.0
-        version: 0.3.0(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6)))(eslint@9.16.0(jiti@1.21.6))(prettier@3.4.2)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1))
+        specifier: 0.4.0-beta.7
+        version: 0.4.0-beta.7(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6)))(eslint@9.16.0(jiti@1.21.6))(prettier@3.4.2)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1))
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -1201,11 +1201,11 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-mister-hope@0.3.0:
-    resolution: {integrity: sha512-CntbuzJycf1ooc72MMJLA0NvuzPbdNukGX9Ksem09Rqta2sHXVzNDRlnb3F7iCGBrVfqbMy2Ws17Ie/tlsWLlg==}
+  eslint-config-mister-hope@0.4.0-beta.7:
+    resolution: {integrity: sha512-hae8+9WdejgfEe90No9yha7vvp5GEqn+t0XPYYtcOWU5Ds+S8GJRLIMBeHTTCTkpSz3ins25iTXH3Gi1fdcDtg==}
     peerDependencies:
-      eslint: ^9.8.0
-      eslint-plugin-vue: ^9.27.0
+      eslint: ^9.15.0
+      eslint-plugin-vue: ^9.31.0
       vue-eslint-parser: ^9.4.3
     peerDependenciesMeta:
       eslint-plugin-vue:
@@ -3748,7 +3748,7 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-mister-hope@0.3.0(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6)))(eslint@9.16.0(jiti@1.21.6))(prettier@3.4.2)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)):
+  eslint-config-mister-hope@0.4.0-beta.7(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6)))(eslint@9.16.0(jiti@1.21.6))(prettier@3.4.2)(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1)):
     dependencies:
       '@eslint/js': 9.16.0
       '@vitest/eslint-plugin': 1.1.14(@typescript-eslint/utils@8.17.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2))(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)(vitest@2.1.8(@types/node@22.10.1))

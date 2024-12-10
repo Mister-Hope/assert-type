@@ -61,7 +61,7 @@
     "cz-conventional-changelog": "3.3.0",
     "esbuild": "0.24.0",
     "eslint": "9.16.0",
-    "eslint-config-mister-hope": "0.3.0",
+    "eslint-config-mister-hope": "0.4.0-beta.7",
     "husky": "9.1.7",
     "nano-staged": "0.8.0",
     "prettier": "3.4.2",

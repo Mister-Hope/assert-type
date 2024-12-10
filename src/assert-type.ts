@@ -1,5 +1,6 @@
 import { toString } from "./to-string.js";
 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
 export const assertType = <T = unknown>(variable: T, type: string): boolean => {
   if (type === "array") return Array.isArray(variable);
   if (type === "null") return variable === null;

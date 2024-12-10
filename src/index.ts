@@ -38,6 +38,7 @@ export const assertType = <T = unknown>(
   return false;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unnecessary-type-parameters
 export const checkKeys = <T = unknown>(
   obj: T,
   config: Record<string, string[] | string | TypeOption>,
