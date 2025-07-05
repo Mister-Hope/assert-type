@@ -55,7 +55,7 @@
     }
   },
   "devDependencies": {
-    "@types/node": "22.15.34",
+    "@types/node": "22.16.0",
     "@vitest/coverage-istanbul": "3.2.4",
     "conventional-changelog-cli": "5.0.0",
     "cz-conventional-changelog": "3.3.0",
